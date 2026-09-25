@@ -1,0 +1,158 @@
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+}
+
+header{
+    background:#596b7a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+main{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:20px;
+    padding:20px;
+
+box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+background:white;
+}
+
+.kart{
+    display:flex;
+    align-items:center;
+    gap:20px;
+
+    border:1px solid #ccc;
+    border-radius:10px;
+    padding:15px;
+    margin-bottom:15px;
+}
+
+.harita{
+    border:1px solid #ccc;
+    border-radius:10px;
+    min-height:300px;
+    padding:20px;
+    text-align:center;
+}
+
+footer{
+    background:#53688b;
+    color:white;
+    text-align:center;
+    padding:10px;
+}
+.kart img{
+    width: 120px;
+    height:120px;
+    object-fit:cover;
+    border-radius:8px;
+}
+.kart img{
+    width:120px;
+    height:120px;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+.ilanlar{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:15px;
+}
+.harita img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:10px;
+}
+.harita{
+    width:100%;
+    height:700px;
+
+    border:1px solid #ccc;
+    border-radius:20px;
+
+    overflow:hidden;
+
+    padding:0;
+    margin-top:20px;
+    transition:0.3s;
+cursor:pointer;
+
+}
+.arama{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+
+    width:80%;
+    max-width:1800px;
+
+    margin:40px auto;
+
+    padding:3px;
+
+    background:white;
+    border-radius:80px;
+
+    box-shadow:0 5px 25px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.arama input,
+.arama select{
+    width:100%;
+    max-width:300px;
+
+    padding:12px;
+
+    font-size:18px;
+
+    border:1px solid #ccc;
+    border-radius:50px;
+}
+
+.arama button{
+    padding:20px 40px;
+
+    font-size:18px;
+
+    border:none;
+    border-radius:50px;
+
+    background:#ff5a5f;
+    color:white;
+
+    cursor:pointer;
+}
+.harita iframe{
+    width:100%;
+    height:100%;
+    border:none;
+}
+.kart{
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.kart:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.arama button:hover{
+    background:#e0484d;
+    transform:scale(1.05);
+}
+.harita:hover{
+    transform:scale(1.02);
+    box-shadow:0 8px 25px rgba(0,0,0,0.2);
+}
+.arama:hover{
+    transform:scale(1.02);
+    box-shadow:0 8px 30px rgba(0,0,0,0.25);
+}
